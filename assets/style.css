@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.jumbotron-heading {
+    font-size: 2rem;
+}
+.container {
+    margin-top: 30px;
+}
+#editor {
+    width: 100%;
+    height: 90vh;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+#preview {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 90vh;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-md-6 {
+    padding: 10px;
+}

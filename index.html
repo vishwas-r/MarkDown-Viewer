@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Viewer</title>
+    <meta name="description" content="A simple and easy-to-use Markdown Viewer for previewing Markdown files as HTML. View your Markdown content instantly with our online tool.">
+    <meta name="keywords" content="Markdown, Markdown Viewer, View Markdown, Markdown Preview, Online Markdown Viewer">
+    <meta name="author" content="Vishwas R">        
+    <meta property="og:title" content="Markdown Viewer">
+    <meta property="og:description" content="View your Markdown content easily with the Markdown Viewer tool. Instant preview of Markdown to HTML.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">        
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Markdown Viewer">
+    <meta name="twitter:description" content="View and preview your Markdown content easily with the Markdown Viewer tool.">
+    <meta name="twitter:image" content="">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <h1 class="jumbotron-heading text-white">MarkDown Viewer</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Paste MD Here</h4>
+                <textarea id="editor">
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+## Emphasis
+
+**This is bold text**
+
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+
+## Lists
+
+Unordered
+
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+    - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+## Code
+
+Inline `code`
+
+``` js
+var foo = function (bar) {
+    return bar++;
+};
+
+console.log(foo(5));
+
+```
+
+## Tables
+
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+## Links
+
+[link text](http://github.com/vishwas-r)                        
+					</textarea> 
+				</div>
+				<div class="col-md-6">
+                    <h4>Preview</h4>
+					<div id="preview" class="html"></div>
+				</div>
+			</div>
+		</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.js"></script>
+        <script src="assets/script.js"></script>
+	</body>
+</html>
